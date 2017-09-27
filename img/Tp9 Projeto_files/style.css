@@ -22,10 +22,10 @@
 
 /* Declare heights because of positioning of img element */
 
-#maps {
+.maps {
   width: calc(100% - 300px);
 float: right;
-height: calc(100vh - 40px - 30px);
+height: calc(100% - 40px);
 position: relative
 }
 
