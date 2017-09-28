@@ -60,17 +60,23 @@
             &zoom=17
             &key=AIzaSyBnbfkFJe52ZjvZ95_NKqOXt8vNrH1iDPs">
         </iframe> -->
-        <div class="maps">
-          <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCuRp-UtBXD4DlyYp7pMDTU91erB0kkcGI&libraries=places"
-         async defer></script>
+        <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCuRp-UtBXD4DlyYp7pMDTU91erB0kkcGI&callback=initMap&libraries=places"
+       async defer></script>
+        <div id="map">
+
         </div>
 
       <div class="menuOpcoes">
         <ul>
-          <button type="button" class="btn btn-primary btn-lg btn-block">Restaurantes</button>
-          <button type="button" class="btn btn-primary btn-lg btn-block">Hotéis</button>
-          <button type="button" class="btn btn-primary btn-lg btn-block">Delegacias</button>
-          <button type="button" class="btn btn-primary btn-lg btn-block">Hospitais</button>
+          <button type="button" onclick="searchAndRender('Restaurante')" class="btn btn-primary btn-lg btn-block">Restaurantes</button>
+          <button type="button" onclick="searchAndRender('Hotel')" class="btn btn-primary btn-lg btn-block">Hotéis</button>
+          <button type="button" onclick="searchAndRender('Delegacia')" class="btn btn-primary btn-lg btn-block">Delegacias</button>
+          <button type="button" onclick="searchAndRender('hospital')" class="btn btn-primary btn-lg btn-block">Hospitais</button>
+          <button type="button" onclick="searchAndRender('Igreja')" class="btn btn-primary btn-lg btn-block">Igreja</button>
+          <button type="button" onclick="searchAndRender('Pontos Turisticos')" class="btn btn-primary btn-lg btn-block">Pontos Turísticos</button>
+          <button type="button" onclick="searchAndRender('Bares')" class="btn btn-primary btn-lg btn-block">Bares</button>
+          <button type="button" onclick="searchAndRender('Comida Vegana')" class="btn btn-primary btn-lg btn-block">Comida Vegana</button>
+
         </ul>
       </div>
     </main>
