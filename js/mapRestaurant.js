@@ -42,6 +42,8 @@ function createMarker(place) {
   });
   return marker;
   }
+
+  $(".menuOpcoes").animate({ left: "-500"} , 1000)
 }
 
 var map;
@@ -103,3 +105,26 @@ function focusMe(button) {
       }
       button.className = "button-selected";
     }
+$(document).ready(function(){
+  var show = true;
+
+  $(window).resize(function() {
+    if($(window).width() < 1000){
+      $(".menuOpcoes").animate({ left: "-500"} , 1000)
+      show = false;
+    } else {
+      $(".menuOpcoes").animate({ left: "0"} , 1000);
+      show = true;
+    }
+  });
+
+  $("#show").on('click', function(){
+    if(show){
+      show = false;
+      $(".menuOpcoes").animate({ left: "-500"} , 1000);
+    } else {
+      show = true;
+      $(".menuOpcoes").animate({ left: "0"} , 1000);
+    }
+  })
+})
