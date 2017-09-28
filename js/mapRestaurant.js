@@ -12,10 +12,10 @@ function searchAndRender(type) {
 
   infowindow = new google.maps.InfoWindow();
   var service = new google.maps.places.PlacesService(map);
-  service.textSearch({
+  service.nearbySearch({
     location: pos,
-    radius: 10000,
-    query: type
+    radius: 500,
+    keyword: type,
   }, callback);
 
 clearOverlays()
@@ -60,7 +60,7 @@ function initMap() {
             lat: -34.397,
             lng: 150.644
         },
-        zoom: 14,
+        zoom: 17,
         mapTypeId: 'roadmap'
     });
 
