@@ -10,6 +10,11 @@ body {
   color: white !important;
 }
 
+.btn:focus {
+  background: linear-gradient(#152B40, #152B40);
+  color: white
+}
+
 
 .carousel {
   margin-bottom: 0em;
@@ -50,6 +55,10 @@ position: relative
   background-color: #849FDC;
   width: 300px;
   height: auto;
+}
+
+.menuOpcoes button {
+  text-align: left;
 }
 
 .menuOpcoes ul{
