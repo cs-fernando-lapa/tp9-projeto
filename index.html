@@ -19,35 +19,35 @@
   </head>
   <body>
     <header role="banner">
-      <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <button id="show" class="navbar-toggler" type="button" data-toggle="collapse" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+      <nav tabindex="0" class="navbar navbar-expand-lg navbar-light bg-light">
+        <button tabindex="1" id="show" class="navbar-toggler" type="button" data-toggle="collapse" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
         <a class="navbar-brand" href="#">Rio The Navigation</a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+        <button tabindex="2" class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
-        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+        <div tabindex="0" class="collapse navbar-collapse" id="navbarNavDropdown">
           <ul class="navbar-nav">
-            <li class="nav-item active">
+            <li tabindex="1" class="nav-item active">
               <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
             </li>
-            <li class="nav-item">
+            <li tabindex="2" class="nav-item">
               <a class="nav-link" href="about.html">Sobre Nós</a>
             </li>
           </ul>
         </div>
       </nav>
     </header>
-    <main role="landmark" >
+    <main tabindex="0" role="landmark" >
       <div class="menuOpcoes">
-        <ul role="menu">
-          <li><button type="submit" onclick="searchAndRender('Restaurante')" class="btn btn-primary btn-lg btn-block"><i class="fa fa-cutlery" role="button"></i>    Restaurantes</button></li>
-          <li><button type="submit" onclick="searchAndRender('Hotel')" class="btn btn-primary btn-lg btn-block"><i class="fa fa-bed" role="button"></i>    Hotéis</button></li>
-          <li><button type="submit" onclick="searchAndRender('Delegacia')" class="btn btn-primary btn-lg btn-block"><i class="fa fa-shield" role="button"></i>    Delegacias</button></li>
-          <li><button type="submit" onclick="searchAndRender('hospital')" class="btn btn-primary btn-lg btn-block"><i class="fa fa-hospital-o" role="button"></i>    Hospitais</button></li>
-          <li><button type="submit" onclick="searchAndRender('Igreja')" class="btn btn-primary btn-lg btn-block"><i class="fa fa-btc" role="button"></i>    Igreja</button></li>
-          <li><button type="submit" onclick="searchAndRender('Pontos Turisticos')" class="btn btn-primary btn-lg btn-block"><i class="fa fa-university" role="button"></i>    Pontos Turísticos</button></li>
-          <li><button type="submit" onclick="searchAndRender('Bares')" class="btn btn-primary btn-lg btn-block"><i class="fa fa-beer" role="button"></i>  Bares</button></li>
-          <li><button type="submit" onclick="searchAndRender('Comida Vegana')" class="btn btn-primary btn-lg btn-block"><i class="fa fa-lemon-o" role="button"></i>     Comida Vegana</button></li>
+        <ul tabindex="0" role="menu">
+          <li><button tabindex="0" type="submit" onclick="searchAndRender('Restaurante')" class="btn btn-primary btn-lg btn-block"><i class="fa fa-cutlery" role="button"></i>    Restaurantes</button></li>
+          <li><button tabindex="1" type="submit" onclick="searchAndRender('Hotel')" class="btn btn-primary btn-lg btn-block"><i class="fa fa-bed" role="button"></i>    Hotéis</button></li>
+          <li><button tabindex="2" type="submit" onclick="searchAndRender('Delegacia')" class="btn btn-primary btn-lg btn-block"><i class="fa fa-shield" role="button"></i>    Delegacias</button></li>
+          <li><button tabindex="3" type="submit" onclick="searchAndRender('hospital')" class="btn btn-primary btn-lg btn-block"><i class="fa fa-hospital-o" role="button"></i>    Hospitais</button></li>
+          <li><button tabindex="4" type="submit" onclick="searchAndRender('Igreja')" class="btn btn-primary btn-lg btn-block"><i class="fa fa-btc" role="button"></i>    Igreja</button></li>
+          <li><button tabindex="5" type="submit" onclick="searchAndRender('Pontos Turisticos')" class="btn btn-primary btn-lg btn-block"><i class="fa fa-university" role="button"></i>    Pontos Turísticos</button></li>
+          <li><button tabindex="6" type="submit" onclick="searchAndRender('Bares')" class="btn btn-primary btn-lg btn-block"><i class="fa fa-beer" role="button"></i>  Bares</button></li>
+          <li><button tabindex="7" type="submit" onclick="searchAndRender('Comida Vegana')" class="btn btn-primary btn-lg btn-block"><i class="fa fa-lemon-o" role="button"></i>     Comida Vegana</button></li>
         </ul>
       </div>
 
