@@ -42,8 +42,9 @@ function createMarker(place) {
   });
   return marker;
   }
-
-  $(".menuOpcoes").animate({ left: "-500"} , 1000)
+  if ($(window).width() < 990) {
+    $(".menuOpcoes").animate({ left: "-500"} , 1000)
+  }
 }
 
 var map;
@@ -105,8 +106,9 @@ function focusMe(button) {
       }
       button.className = "button-selected";
     }
+var show;
 $(document).ready(function(){
-  var show = true;
+  show = true;
 
   $(window).resize(function() {
     if($(window).width() < 1000){
