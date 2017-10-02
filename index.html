@@ -18,7 +18,7 @@
     <title>Tp9 Projeto</title>
   </head>
   <body>
-    <header>
+    <header role="banner">
       <nav class="navbar navbar-expand-lg navbar-light bg-light">
         <button id="show" class="navbar-toggler" type="button" data-toggle="collapse" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
         <a class="navbar-brand" href="#">Rio The Navigation</a>
@@ -37,24 +37,24 @@
         </div>
       </nav>
     </header>
-    <main>
+    <main role="landmark" >
       <div class="menuOpcoes">
-        <ul>
-          <li><button type="submit" onclick="searchAndRender('Restaurante')" class="btn btn-primary btn-lg btn-block"><i class="fa fa-cutlery" aria-hidden="true"></i>    Restaurantes</button></li>
-          <li><button type="submit" onclick="searchAndRender('Hotel')" class="btn btn-primary btn-lg btn-block"><i class="fa fa-bed" aria-hidden="true"></i>    Hotéis</button></li>
-          <li><button type="submit" onclick="searchAndRender('Delegacia')" class="btn btn-primary btn-lg btn-block"><i class="fa fa-shield" aria-hidden="true"></i>    Delegacias</button></li>
-          <li><button type="submit" onclick="searchAndRender('hospital')" class="btn btn-primary btn-lg btn-block"><i class="fa fa-hospital-o" aria-hidden="true"></i>    Hospitais</button></li>
-          <li><button type="submit" onclick="searchAndRender('Igreja')" class="btn btn-primary btn-lg btn-block"><i class="fa fa-btc" aria-hidden="true"></i>    Igreja</button></li>
-          <li><button type="submit" onclick="searchAndRender('Pontos Turisticos')" class="btn btn-primary btn-lg btn-block"><i class="fa fa-university" aria-hidden="true"></i>    Pontos Turísticos</button></li>
-          <li><button type="submit" onclick="searchAndRender('Bares')" class="btn btn-primary btn-lg btn-block"><i class="fa fa-beer" aria-hidden="true"></i>  Bares</button></li>
-          <li><button type="submit" onclick="searchAndRender('Comida Vegana')" class="btn btn-primary btn-lg btn-block"><i class="fa fa-lemon-o" aria-hidden="true"></i>     Comida Vegana</button></li>
+        <ul role="menu">
+          <li><button type="submit" onclick="searchAndRender('Restaurante')" class="btn btn-primary btn-lg btn-block"><i class="fa fa-cutlery" role="button"></i>    Restaurantes</button></li>
+          <li><button type="submit" onclick="searchAndRender('Hotel')" class="btn btn-primary btn-lg btn-block"><i class="fa fa-bed" role="button"></i>    Hotéis</button></li>
+          <li><button type="submit" onclick="searchAndRender('Delegacia')" class="btn btn-primary btn-lg btn-block"><i class="fa fa-shield" role="button"></i>    Delegacias</button></li>
+          <li><button type="submit" onclick="searchAndRender('hospital')" class="btn btn-primary btn-lg btn-block"><i class="fa fa-hospital-o" role="button"></i>    Hospitais</button></li>
+          <li><button type="submit" onclick="searchAndRender('Igreja')" class="btn btn-primary btn-lg btn-block"><i class="fa fa-btc" role="button"></i>    Igreja</button></li>
+          <li><button type="submit" onclick="searchAndRender('Pontos Turisticos')" class="btn btn-primary btn-lg btn-block"><i class="fa fa-university" role="button"></i>    Pontos Turísticos</button></li>
+          <li><button type="submit" onclick="searchAndRender('Bares')" class="btn btn-primary btn-lg btn-block"><i class="fa fa-beer" role="button"></i>  Bares</button></li>
+          <li><button type="submit" onclick="searchAndRender('Comida Vegana')" class="btn btn-primary btn-lg btn-block"><i class="fa fa-lemon-o" role="button"></i>     Comida Vegana</button></li>
         </ul>
       </div>
 
       <div id="map">
       </div>
     </main>
-    <footer class="footer">
+    <footer class="footer" role="contentinfo">
       <div class="container">
         <span class="text-muted"><strong>Copyright © Desenvolvido por Fernando Lapa</strong> </span>
       </div>
